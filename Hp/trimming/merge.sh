@@ -1,0 +1,4 @@
+zcat RNASeq_Bd_Sporangia_R1_pair1.timmed.fastq.gz RNASeq_Bd_Sporangia_R2_pair1.timmed.fastq.gz RNASeq_Bd_Sporangia_R3_pair1.timmed.fastq.gz > RNASeq_Bd_Sporangia_pair1.timmed.fastq
+gunzip RNASeq_Bd_Sporangia_pair1.timmed.fastq
+zcat RNASeq_Bd_Sporangia_R1_pair2.timmed.fastq.gz RNASeq_Bd_Sporangia_R2_pair2.timmed.fastq.gz RNASeq_Bd_Sporangia_R3_pair2.timmed.fastq.gz > RNASeq_Bd_Sporangia_pair2.timmed.fastq
+gunzip RNASeq_Bd_Sporangia_pair2.timmed.fastq
