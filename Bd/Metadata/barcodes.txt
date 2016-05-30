@@ -1,0 +1,6 @@
+ATCACG	Bd_Sporangia_Rep1
+CGATGT	Bd_Sporangia_Rep2
+TTAGGC	Bd_Sporangia_Rep3
+TGACCA	Bd_Zoospore_Rep1
+ACAGTG	Bd_Zoospore_Rep2
+GCCAAT	Bd_Zoospore_Rep3
