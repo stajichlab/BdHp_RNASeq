@@ -1,0 +1,6 @@
+CAGATC	Hp_Sporangia_Rep1
+ACTTGA	Hp_Sporangia_Rep2
+GATCAG	Hp_Sporangia_Rep3
+TAGCTT	Hp_Zoospore_Rep1
+GGCTAC	Hp_Zoospore_Rep2
+CTTGTA	Hp_Zoospore_Rep3
