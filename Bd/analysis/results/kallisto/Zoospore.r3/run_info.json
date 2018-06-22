@@ -1,0 +1,13 @@
+{
+	"n_targets": 8732,
+	"n_bootstraps": 0,
+	"n_processed": 4447838,
+	"n_pseudoaligned": 3583328,
+	"n_unique": 3353342,
+	"p_pseudoaligned": 80.6,
+	"p_unique": 75.4,
+	"kallisto_version": "0.44.0",
+	"index_version": 10,
+	"start_time": "Thu Jun 21 18:03:33 2018",
+	"call": "kallisto quant -i db/Batde5.idx -o results/kallisto/Zoospore.r3 -t 8 --bias --single-overhang input/RNASeq_Bd_Zoospore_R3_pair1.fastq.gz input/RNASeq_Bd_Zoospore_R3_pair2.fastq.gz"
+}

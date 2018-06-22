@@ -1,0 +1,13 @@
+{
+	"n_targets": 8732,
+	"n_bootstraps": 0,
+	"n_processed": 3101285,
+	"n_pseudoaligned": 2486492,
+	"n_unique": 2316160,
+	"p_pseudoaligned": 80.2,
+	"p_unique": 74.7,
+	"kallisto_version": "0.44.0",
+	"index_version": 10,
+	"start_time": "Thu Jun 21 18:03:33 2018",
+	"call": "kallisto quant -i db/Batde5.idx -o results/kallisto/Sporangia.r3 -t 8 --bias --single-overhang input/RNASeq_Bd_Sporangia_R3_pair1.fastq.gz input/RNASeq_Bd_Sporangia_R3_pair2.fastq.gz"
+}
