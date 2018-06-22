@@ -1,0 +1,13 @@
+{
+	"n_targets": 7123,
+	"n_bootstraps": 0,
+	"n_processed": 15215391,
+	"n_pseudoaligned": 6557574,
+	"n_unique": 6500826,
+	"p_pseudoaligned": 43.1,
+	"p_unique": 42.7,
+	"kallisto_version": "0.44.0",
+	"index_version": 10,
+	"start_time": "Thu Jun 21 18:12:01 2018",
+	"call": "kallisto quant -i db/Hompol1.idx -o results/kallisto/Zoospore.r3 -t 8 --bias --single-overhang input/RNASeq_Hp_Zoospore_R3_pair1.fastq.gz input/RNASeq_Hp_Zoospore_R3_pair2.fastq.gz"
+}

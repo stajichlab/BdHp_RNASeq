@@ -1,0 +1,13 @@
+{
+	"n_targets": 7123,
+	"n_bootstraps": 0,
+	"n_processed": 7421742,
+	"n_pseudoaligned": 3703693,
+	"n_unique": 3673674,
+	"p_pseudoaligned": 49.9,
+	"p_unique": 49.5,
+	"kallisto_version": "0.44.0",
+	"index_version": 10,
+	"start_time": "Thu Jun 21 18:12:01 2018",
+	"call": "kallisto quant -i db/Hompol1.idx -o results/kallisto/Sporangia.r2 -t 8 --bias --single-overhang input/RNASeq_Hp_Sporangia_R2_pair1.fastq.gz input/RNASeq_Hp_Sporangia_R2_pair2.fastq.gz"
+}
