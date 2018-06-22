@@ -53,6 +53,8 @@ ggplot(df, aes(x = x, y = y)) + geom_hex(bins = 80) +
 select <- order(rowMeans(counts(dds,normalized=TRUE)),
                 decreasing=TRUE)[1:60]
 df <- as.data.frame(colData(dds)[,c("condition")])
+rownames(df) = exprnames
+colnames(df) = c("Condition")
 pheatmap(assay(vsd)[select,], cluster_rows=FALSE, show_rownames=TRUE,
          fontsize_row = 7,fontsize_col = 7,
          cluster_cols=FALSE, annotation_col=df,main="VSD")
@@ -64,7 +66,7 @@ pheatmap(assay(rld)[select,], cluster_rows=FALSE, show_rownames=TRUE,
 
 sampleDists <- dist(t(assay(vsd)))
 sampleDistMatrix <- as.matrix(sampleDists)
-rownames(sampleDistMatrix) <- paste(vsd$condition, vsd$genotype, sep="-")
+rownames(sampleDistMatrix) <- paste(vsd$condition, vsd$Rep,sep="-")
 colnames(sampleDistMatrix) <- NULL
 colors <- colorRampPalette( rev(brewer.pal(9, "Blues")) )(255)
 
