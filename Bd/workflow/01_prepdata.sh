@@ -17,4 +17,4 @@ done < $BARCODES
 mkdir -p $WORKDIR/genome
 
 module load gmap
-gmap_build -s none -D $WORKDIR/genome -d ${BASE}_JEL423 ../../Bd/genome/batrachochytrium_dendrobatidis_1_supercontigs.fasta ../../Bd/genome/batrachochytrium_dendrobatidis_jel423_mitochondrial_assembly_1_1_supercontigs.fasta
+gmap_build -s none -D $WORKDIR/genome -d ${BASE}_JEL423 ~/shared/projects/Chytrid/Bd/genome/batrachochytrium_dendrobatidis_1_supercontigs.fasta ~/shared/projects/Chytrid/Bd/genome/batrachochytrium_dendrobatidis_jel423_mitochondrial_assembly_1_1_supercontigs.fasta
