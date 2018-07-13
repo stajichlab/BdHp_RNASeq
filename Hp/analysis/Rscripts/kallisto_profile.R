@@ -7,7 +7,7 @@ library(Biobase)
 library(pheatmap)
 library(RColorBrewer)
 
-samples <- read.csv("samples.csv",header=TRUE)
+samples <- read.csv("samples_trunc.csv",header=TRUE)
 exprnames <- do.call(paste,c(samples[c("Condition","Rep")],sep="."))
 exprnames <- sub(".([123])$",".r\\1",exprnames,perl=TRUE)
 files <- file.path("results","kallisto",exprnames,"abundance.h5")
@@ -58,6 +58,14 @@ colnames(df) = c("Condition")
 pheatmap(assay(vsd)[select,], cluster_rows=FALSE, show_rownames=TRUE,
          fontsize_row = 7,fontsize_col = 7,
          cluster_cols=FALSE, annotation_col=df,main="VSD")
+
+topVar <- head(order(rowVars(assay(vsd)),
+                                decreasing=TRUE),70)
+mat  <- assay(vsd)[ topVar, ]
+mat  <- mat - rowMeans(mat)
+pheatmap(mat, show_rownames=TRUE,
+         fontsize_row = 7,fontsize_col = 7,
+         cluster_cols=FALSE, annotation_col=df,main="VSD - most different")
 
 
 pheatmap(assay(rld)[select,], cluster_rows=FALSE, show_rownames=TRUE,
